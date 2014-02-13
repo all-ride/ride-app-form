@@ -1,0 +1,9 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "pallo\\library\\validation\\validator\\Validator",
+            "class": "pallo\\application\\validation\\validator\\ImageValidator",
+            "id": "image"
+        }
+    ]
+}
