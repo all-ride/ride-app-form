@@ -1,6 +1,6 @@
 {
-    "name": "pallo/app-form",
-    "description": "Integration of the form library for a Pallo application.",
+    "name": "ride/app-form",
+    "description": "Integration of the form library for a Ride application.",
     "license": "MIT",
     "version": "0.1.0",
     "authors": [
@@ -10,14 +10,14 @@
         }
     ],
     "require": {
-        "pallo/app": ">=0.4.0",
-        "pallo/app-validation": ">=0.4.0",
-        "pallo/lib-dependency": ">=0.5.0",
-        "pallo/lib-form": ">=0.5.0"
+        "ride/app": ">=0.4.0",
+        "ride/app-validation": ">=0.4.0",
+        "ride/lib-dependency": ">=0.5.0",
+        "ride/lib-form": ">=0.5.0"
     },
     "autoload": {
         "psr-0": {
-            "pallo\\application\\validation\\validator\\ImageValidator": ["src/"]
+            "ride\\application\\validation\\validator\\ImageValidator": ["src/"]
         }
     }    
 }
