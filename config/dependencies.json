@@ -1,6 +1,202 @@
 {
     "dependencies": [
         {
+            "interfaces": "ride\\library\\form\\row\\factory\\RowFactory",
+            "class": "ride\\application\\form\\row\\factory\\DependencyRowFactory",
+            "id": "dependency",
+            "calls": [
+                {
+                    "method": "addAbsolutePath",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "call",
+                            "properties": {
+                                "interface": "ride\\library\\system\\file\\browser\\FileBrowser",
+                                "method": "getApplicationDirectory"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "addAbsolutePath",
+                    "arguments": [
+                        {
+                            "name": "path",
+                            "type": "call",
+                            "properties": {
+                                "interface": "ride\\library\\system\\file\\browser\\FileBrowser",
+                                "method": "getPublicDirectory"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\StringRow",
+            "id": "string"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\NumberRow",
+            "id": "integer"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\SelectRow",
+            "id": "select"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\NumberRow",
+            "id": "number"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\DateRow",
+            "id": "date"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\DateRow",
+            "id": "datetime"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\OptionRow",
+            "id": "option"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\OptionRow",
+            "id": "boolean"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\TextRow",
+            "id": "binary"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\TextRow",
+            "id": "serialize"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\TextRow",
+            "id": "text"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\WysiwygRow",
+            "id": "wysiwyg"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\FileRow",
+            "id": "file",
+            "calls": [
+                "setFileSystem"
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\ImageRow",
+            "id": "image",
+            "calls": [
+                "setFileSystem"
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\WebsiteRow",
+            "id": "website"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\EmailRow",
+            "id": "email"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\PasswordRow",
+            "id": "password"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\HiddenRow",
+            "id": "hidden"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\LabelRow",
+            "id": "label"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\ComponentRow",
+            "id": "component",
+            "calls": [
+                {
+                    "method": "setReflectionHelper",
+                    "arguments": [
+                        {
+                            "name": "reflectionHelper",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\reflection\\ReflectionHelper"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setRowFactory",
+                    "arguments": [
+                        {
+                            "name": "rowFactory",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\form\\row\\factory\\RowFactory"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\CollectionRow",
+            "id": "collection",
+            "calls": [
+                {
+                    "method": "setReflectionHelper",
+                    "arguments": [
+                        {
+                            "name": "reflectionHelper",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\reflection\\ReflectionHelper"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "method": "setRowFactory",
+                    "arguments": [
+                        {
+                            "name": "rowFactory",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\form\\row\\factory\\RowFactory"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
             "interfaces": "ride\\library\\validation\\validator\\Validator",
             "class": "ride\\application\\validation\\validator\\ImageValidator",
             "id": "image"

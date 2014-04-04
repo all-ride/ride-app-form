@@ -12,7 +12,7 @@ class ImageValidator extends LibImageValidator implements DependencyValidator {
 
     /**
      * Hook to process a created validator
-     * @param ride\library\dependency\DependencyInjector $dependencyInjector
+     * @param \ride\library\dependency\DependencyInjector $dependencyInjector
      * @return null
      */
     public function processValidator(DependencyInjector $dependencyInjector) {
