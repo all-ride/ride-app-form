@@ -136,6 +136,11 @@
         },
         {
             "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\ButtonRow",
+            "id": "button"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
             "class": "ride\\library\\form\\row\\ComponentRow",
             "id": "component",
             "calls": [
