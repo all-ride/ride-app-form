@@ -98,7 +98,19 @@
             "class": "ride\\library\\form\\row\\FileRow",
             "id": "file",
             "calls": [
-                "setFileSystem"
+                "setFileSystem",
+                {
+                    "method": "setDefaultUploadPath",
+                    "arguments": [
+                        {
+                            "name": "defaultUploadPath",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "system.directory.user"
+                            }
+                        }
+                    ]
+                }
             ]
         },
         {
@@ -106,7 +118,19 @@
             "class": "ride\\library\\form\\row\\ImageRow",
             "id": "image",
             "calls": [
-                "setFileSystem"
+                "setFileSystem",
+                {
+                    "method": "setDefaultUploadPath",
+                    "arguments": [
+                        {
+                            "name": "defaultUploadPath",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "system.directory.user"
+                            }
+                        }
+                    ]
+                }
             ]
         },
         {

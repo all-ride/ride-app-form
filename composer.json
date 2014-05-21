@@ -10,10 +10,10 @@
         }
     ],
     "require": {
-        "ride/app": ">=0.4.0",
+        "ride/app": ">=0.4.14",
         "ride/app-validation": ">=0.4.0",
         "ride/lib-dependency": ">=0.6.0",
-        "ride/lib-form": ">=0.8.0"
+        "ride/lib-form": ">=0.8.5"
     },
     "autoload": {
         "psr-0": {
