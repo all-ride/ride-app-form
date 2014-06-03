@@ -50,6 +50,11 @@
         },
         {
             "interfaces": "ride\\library\\form\\row\\Row",
+            "class": "ride\\library\\form\\row\\ObjectRow",
+            "id": "object"
+        },
+        {
+            "interfaces": "ride\\library\\form\\row\\Row",
             "class": "ride\\library\\form\\row\\NumberRow",
             "id": "number"
         },
