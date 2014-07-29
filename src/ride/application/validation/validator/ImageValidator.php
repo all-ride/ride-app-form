@@ -21,7 +21,7 @@ class ImageValidator extends LibImageValidator implements DependencyValidator {
         }
 
         if (!$this->imageFactory) {
-            $this->setImageFactory($dependencyInjector->get('ride\\library\\image\\io\\ImageFactory'));
+            $this->setImageFactory($dependencyInjector->get('ride\\library\\image\\ImageFactory'));
         }
     }
 
