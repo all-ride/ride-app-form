@@ -4,7 +4,7 @@ Integration of the form library with a Ride application.
 
 ## Related Modules 
 
-- [ride/app](https://github.com/all-ride/ride-app-validation)
+- [ride/app](https://github.com/all-ride/ride-app)
 - [ride/app-validation](https://github.com/all-ride/ride-app-validation)
 - [ride/lib-dependency](https://github.com/all-ride/ride-lib-dependency)
 - [ride/lib-form](https://github.com/all-ride/ride-lib-form)
