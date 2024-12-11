@@ -239,6 +239,11 @@
             "interfaces": "ride\\library\\validation\\validator\\Validator",
             "class": "ride\\application\\validation\\validator\\ImageValidator",
             "id": "image"
+        },
+        {
+            "interfaces": "ride\\library\\validation\\validator\\Validator",
+            "class": "ride\\library\\validation\\validator\\DateFormatValidator",
+            "id": "date_format"
         }
     ]
 }
